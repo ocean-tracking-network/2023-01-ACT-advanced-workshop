@@ -1,7 +1,7 @@
 ## Requirements------
 
 ### R version: 3.6.x or newer (recommend 4.0.x) and RStudio.
-### Windows users: Please also download the Rtools version compatible with your R version https://cran.r-project.org/bin/windows/Rtools/history.html (not for MacOS)
+### Windows users: Please also download the Rtools version compatible with your R version https://cran.r-project.org/bin/windows/Rtools/ (not for MacOS)
 
 # Advanced Telemetry Workshop ONLY: You must install also GDAL software, which can take a long time. See the extra setup document provided.
 
@@ -94,11 +94,11 @@ install.packages('ggspatial')
                                                             
 
 ### Dataset and Code -----
-# Once the packages are installed, you can download the datasets and code for this workshop from https://github.com/ocean-tracking-network/otn-workshop-base/tree/master.
+# Once the packages are installed, you can download the datasets and code for this workshop from https://github.com/ocean-tracking-network/2023-01-ACT-advanced-workshop/tree/master.
 # 1) Select the GREEN "code" button at the top and choose "Download ZIP"
 # 2) Unzip the folder and move to secure location on your computer (Documents, Desktop etc.)
 # 3) Copy the folder's path and use it to set your working directly in R using `setwd('<path-to-folder>')`.
 
 # If you are familiar with Git and Github, feel free to clone this repository as you normally would,
-# by running `git clone https://github.com/ocean-tracking-network/otn-workshop-base/tree/master.git` in a terminal program
+# by running `git clone https://github.com/ocean-tracking-network/2023-01-ACT-advanced-workshop/tree/master.git` in a terminal program
 # and following from step 3 above.
