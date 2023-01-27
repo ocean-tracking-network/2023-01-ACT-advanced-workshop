@@ -6,7 +6,6 @@ questions:
     - "How can I use glatos to plot my data?"
     - "What kinds of plots can I make with my data?"
 ---
-**Note to instructors: please choose the relevant Network below when teaching**
 
 Now that we've cleaned and processed our data, we can use `glatos`' built-in plotting tools to make quick and effective visualizations out of it. One of the simplest visualizations is an abacus plot to display animal detections against the appropriate stations. To this end, `glatos` supplies a built-in, customizable `abacus_plot` function.
 

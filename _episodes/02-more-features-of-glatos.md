@@ -5,7 +5,6 @@ exercises: 0
 questions:
     - "What other features does glatos offer?"
 ---
-**Note to instructors: please choose the relevant Network below when teaching**
 
 `glatos` has more advanced analytic tools that let you manipulate your data further. We'll cover a few of these features now, to show you how to take your data beyond just filtering and event creation. By combining the `glatos` package's powerful built-in functions with its interoperability across scientific R packages, we'll show you how to derive powerful insights from your data, and format it in a way that lets you demonstrate them.
 

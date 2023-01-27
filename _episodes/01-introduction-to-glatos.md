@@ -8,7 +8,6 @@ questions:
     - "How can I consolidate my detections into detection events?"
     - "How do I summarize my data?"
 ---
-**Note to instructors: please choose the relevant Network below when teaching**
 
 The `glatos` package is a powerful toolkit that provides a wide range of functionality for loading, processing, and visualizing your data. With it, you can gain valuable insights with quick and easy commands that condense high volumes of base R into straightforward functions, with enough versatility to meet a variety of needs.
 

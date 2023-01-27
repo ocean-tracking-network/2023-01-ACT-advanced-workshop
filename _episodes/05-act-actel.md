@@ -6,8 +6,6 @@ questions:
     - "How do I take my ACT detection extracts and metadata and format them for use in `actel`?"
 ---
 
-**Note to instructors: please choose the relevant Network below when teaching**
-
 ### Preparing our data to use in Actel
 
 So now, as the last piece of stock curriculum for this workshop, let's quickly look at how we can take the data reports we get from the ACT-MATOS (or any other OTN-compatible data partner, like FACT, or OTN proper) and make it ready for `Actel`.
