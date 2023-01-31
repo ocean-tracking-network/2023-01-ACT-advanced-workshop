@@ -74,6 +74,10 @@ install.packages('plotly')
 install.packages('gganimate')
 install.packages('ggspatial')
 
+# Large test dataset for Remora lesson
+
+download.file("https://members.oceantrack.org/data/share/testdataotn.zip/@@download/file/testDataOTN.zip", 
+              "./testDataOTN.zip")
 
 ```
 
