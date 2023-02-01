@@ -35,10 +35,15 @@ path <- SpatialPoints(path, proj4string = CRS("+proj=longlat +datum=WGS84 +no_de
 
 path <-  st_as_sf(path)  %>% st_transform(5070)
 
-ggplot() + 
-  ggspatial::annotation_spatial(md_polygon, fill = "cornsilk3", size = 0) +
-  geom_point(data = path, aes(x=unlist(map(geometry,1)), y=unlist(map(geometry,2)))) +
-  geom_path(data = path, aes(x=unlist(map(geometry,1)), y=unlist(map(geometry,2))))  +
+ggplot() +
+  # Maryland polygon
+  geom_sf(data = md_polygon, fill = "cornsilk3", size = 0) +
+  # path points
+  geom_sf(data = path) +
+  # convert path points to polgyon
+  geom_sf(data = st_cast(st_union(path), 'POLYGON'), fill = NA) +
+  # zoom in
+  coord_sf(x = c(1660338, 1661668), y = c(1932102, 1932700)) +
   theme_void()
 
 plot_path <- path %>% st_cast('MULTIPOINT') %>% summarise(do_union = FALSE) %>% st_cast('LINESTRING')
@@ -51,10 +56,10 @@ track_pts_fix <- prt_reroute(track_pts, md_polygon, vis_graph, blend = TRUE)
 
 track_pts_fix <- prt_update_points(track_pts_fix, track_pts)
 
-pathroutrplot <- ggplot() + 
-  ggspatial::annotation_spatial(md_polygon, fill = "cornsilk3", size = 0) +
-  geom_point(data = track_pts_fix, aes(x=unlist(map(geometry,1)), y=unlist(map(geometry,2)))) +
-  geom_path(data = track_pts_fix, aes(x=unlist(map(geometry,1)), y=unlist(map(geometry,2))))  +
+pathroutrplot <- ggplot()+
+  geom_sf(data = md_polygon, fill = "cornsilk3", size = 0) +
+  geom_sf(data = track_pts_fix) +
+  coord_sf(x = c(1660338, 1661668), y = c(1932102, 1933000)) +
   theme_void()
 
 pathroutrplot
