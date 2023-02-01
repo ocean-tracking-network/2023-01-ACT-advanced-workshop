@@ -1,5 +1,5 @@
 ---
-title: Preparing ACT/OTN/GLATOS Data for actel
+title: Preparing ACT Data for actel
 teaching: 30
 exercises: 0
 questions:
